@@ -1,6 +1,14 @@
 $(document).ready(function () {
 // business side
-
+results = [];
+var newBeepBoop = function(input){
+  //return input;
+  for (var i = 0; i <= input; i++) {
+  alert("loop # " + i);
+  results[i] = i;
+  }
+  alert(results);
+}
 
 
 $("form#beepBoopForm").submit(function(event) {
@@ -8,8 +16,8 @@ $("form#beepBoopForm").submit(function(event) {
   event.preventDefault();
   var number = parseInt($("input#beepBoop").val());
   alert("Input number is " + number);
-  // var results = TBDfunction(number);
-  // $("#results").text(results);
+  var results = newBeepBoop(number);
+  $("#results").text(results);
 }); // END event
 
 
