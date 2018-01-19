@@ -1,7 +1,10 @@
 $(document).ready(function () {
 // business side
 results = [];
-var newBeepBoop = function(input){
+boop1 = /[1]/;
+beep0 = "/[0]/";
+
+var beepBoopByThree = function(input){
   for (var i = 0; i <= input; i++) {
   // alert("loop # " + i);
   results[i] = i;
@@ -16,12 +19,18 @@ var newBeepBoop = function(input){
     }
   }
   alert("divisible by three and zero array: " + results);
-  for (var i = 0; i < results.length; i++) {
-    if (results[i] === 1) {
+}
+
+var beepBoopOne = function (input){
+for (var i = 0; i < results.length; i++) {
+    if (results[i] = boop1) {
       results[i] = "Boop!";
     }
   }
   alert("numbers containing 1 array: " + results);
+}
+
+var beepBoopZero = function (input) {
   for (var i = 0; i < results.length; i++) {
     if (results[i] === 0) {
       results[i] = "Beep!";
@@ -36,7 +45,7 @@ $("form#beepBoopForm").submit(function(event) {
   event.preventDefault();
   var number = parseInt($("input#beepBoop").val());
   alert("Input number is " + number);
-  var results = newBeepBoop(number);
+  var results = beepBoopByThree(number);
   $("#results").text(results);
 }); // END event
 
