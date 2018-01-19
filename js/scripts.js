@@ -4,6 +4,7 @@ $(document).ready(function () {
 // initialize and add filter variables
 var results = [];
 var byThreeResults = [];
+var byThreeResultsStrings = byThreeResults.join();
 var boopOneResults = [];
 var beepZeroResults = [];
 var boop1 = /[1]/;
@@ -23,16 +24,17 @@ var beepBoopByThree = function(input){
       results[i] = "I'm sorry Dave. I'm afraid I can't do that.";
       //add string when number is divisible by three
     }
-    else if (results[i] === 1) {
-      results[i] = "Boop!"; //replace results[1]=Boop!
-    }
   }
   alert("divisible by three and zero array: " + results);
   var byThreeResults = results.slice();
   console.log(byThreeResults);
 }
 
-
+  for (var i = 0; i < byThreeResultsStrings.length; i++) {
+    if (byThreeResultsStrings[i] === boop1) {
+      byThreeResultsStrings[i] = "Boop!";
+    }
+  }
 
 
 // var beepBoopZero = function (input) {
@@ -51,7 +53,8 @@ $("form#beepBoopForm").submit(function(event) {
   var number = parseInt($("input#beepBoop").val());
   alert("Input number is " + number);
   var results = beepBoopByThree(number);
-  // var results = beepBoopOne(byThreeResults);
+  alert(byThreeResultsStrings);
+  // var moreResults = boopOneResults(byThreeResultsString);
 
   // $("#results").text(results);
 }); // END event

@@ -45,18 +45,13 @@
 #### Input: 20, 30, 40, 50
 #### Output: [Beep!] [Boop!]....[Beep!]
 
-
-
-
-
 ### Program replaces 1 with values from 0 and ends at 1. Exceptions are included for values less than 1. (NA)
 #### Input: 1
 #### Output: [Beep!] [Boop!]
 
-### Program replaces 2 with values from 0 and ends at 2. Exceptions are included for values less than 2. (Done)
+### Program replaces 2 with values from 0 and ends at 2. Exceptions are included for values less than 2. (NA)
 #### Input: 2
 #### Output: [Beep!] [Boop!] [2]
-
 
 
 ## Known Bugs
