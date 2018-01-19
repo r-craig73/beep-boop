@@ -2,30 +2,32 @@ $(document).ready(function () {
 // business side
 results = [];
 var newBeepBoop = function(input){
-  //return input;
   for (var i = 0; i <= input; i++) {
-  alert("loop # " + i);
+  // alert("loop # " + i);
   results[i] = i;
   }
   alert("results array: " + results);
   for (var i = 0; i < results.length; i++) {
-    if (results[i] === 0) {
+    if (results[i] / 3 === 0) {
       results[i] = "Beep!";
     }
+    else if (results[i] % 3 === 0) {
+      results[i] = "I'm sorry Dave. I'm afraid I can't do that.";
+    }
   }
-  alert("second results array:" + results);
+  alert("divisible by three and zero array: " + results);
   for (var i = 0; i < results.length; i++) {
     if (results[i] === 1) {
       results[i] = "Boop!";
     }
   }
-  alert("third results array:" + results);
+  alert("numbers containing 1 array: " + results);
   for (var i = 0; i < results.length; i++) {
-    if (results[i] === 3) {
-      results[i] = "I'm sorry Dave. I'm afraid I can't do that.";
+    if (results[i] === 0) {
+      results[i] = "Beep!";
     }
   }
-  alert("fourth results array:" + results);
+  alert("numbers containing 0 array: " + results);
 }
 
 
