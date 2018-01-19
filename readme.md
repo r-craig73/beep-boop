@@ -42,6 +42,14 @@
 #### Input: 4
 #### Output: [Beep!] [Boop!] [I'm sorry Dave. I'm afraid I can't do that.] [4]
 
+### Program replaces 5 with values from 0 and ends at 5. Exceptions are included for values less than 3.
+#### Input: 5
+#### Output: [Beep!] [Boop!] [I'm sorry Dave. I'm afraid I can't do that.] [4] [5]
+
+### Program replaces 5 with values from 0 and ends at 6. Exceptions are included for values less than 3.
+#### Input: 6
+#### Output: [Beep!] [Boop!] [I'm sorry Dave. I'm afraid I can't do that.] [4] [5] [I'm sorry Dave. I'm afraid I can't do that.]
+
 ## Known Bugs
 ### None known issues at the moment.
 
