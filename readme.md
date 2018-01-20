@@ -17,23 +17,27 @@
 
 ## Beep Boop Specifications (incrementing number)
 
-### Program replaces numbers divisible by 3 with "I'm sorry Dave. I'm afraid I can't do that." (Done, including 0/3)
+### Program replaces numbers divisible by 3 with "I'm sorry Dave. I'm afraid I can't do that." (Done)
 #### Input: 3
 #### Output: [I'm sorry Dave. I'm afraid I can't do that.]
 
-### Program replaces 3 with numbers (start:0, end:3) and exceptions. (Done)
+### Program replaces 0 with "Beep!" (Done)
+#### Input: 0
+#### Output: [Beep!]
+
+### Program replaces 3 with numbers (start:0, end:3) and exceptions. (NA)
 #### Input: 3
 #### Output: [Beep!] [Boop!] [2] [I'm sorry Dave. I'm afraid I can't do that.]
 
-### Program replaces 4 with numbers (start:0, end:4) and exceptions. (Done)
+### Program replaces 4 with numbers (start:0, end:4) and exceptions. (NA)
 #### Input: 4
 #### Output: [Beep!] [Boop!] [2] [I'm sorry Dave. I'm afraid I can't do that.] [4]
 
-### Program replaces 5 with numbers (start:0, end:5) and exceptions. (Done)
+### Program replaces 5 with numbers (start:0, end:5) and exceptions. (NA)
 #### Input: 5
 #### Output: [Beep!] [Boop!] [2] [I'm sorry Dave. I'm afraid I can't do that.] [4] [5]
 
-### Program replaces 6 with numbers (star: 0, end:6) and exceptions. (Done)
+### Program replaces 6 with numbers (star: 0, end:6) and exceptions. (NA)
 #### Input: 6
 #### Output: [Beep!] [Boop!] [2] [I'm sorry Dave. I'm afraid I can't do that.] [4] [5] [I'm sorry Dave. I'm afraid I can't do that.]
 
@@ -52,7 +56,6 @@
 ### Program replaces 2 with values from 0 and ends at 2. Exceptions are included for values less than 2. (NA)
 #### Input: 2
 #### Output: [Beep!] [Boop!] [2]
-
 
 ## Known Bugs
 ### None known issues at the moment.

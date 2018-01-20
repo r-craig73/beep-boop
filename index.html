@@ -2,33 +2,34 @@
 <html>
   <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-   <link href="css/styles.css" rel="stylesheet" type="text/css">
-   <script src="js/jquery-3.2.1.js"></script>
-   <script src="js/scripts.js"></script>
-    <meta charset="utf-8">
-    <title class="text-center">Beep! Boop!</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <meta charset="utf-8">
+  <title class="text-center">Beep! Boop!</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1 class="text-center">Beep! Boop!</h1>
-        <h3 class="text-center">After inputting a number, the program will output a range of numbers, from zero to your input number, with special characters along the way.</h3>
+      <h1 class="text-center">Beep! Boop!</h1>
+      <h3 class="text-center">After inputting a number, the program will output a
+        range of numbers, from zero to your input number, with special
+        characters along the way.</h3>
       </div>
-
       <form id="beepBoopForm">
-          <div class="form-group">
-            <label for="number">Please enter a number:</label>
-            <input id="beepBoop" type="text">
-          </div>
-          <button type="submit" class="btn">Change to Beep-Boop!</button>
-        </form>
-
-        <div id="results">
-        <br>
+        <div class="form-group">
+          <label for="number">Please enter an integer:</label>
+          <input id="beepBoop" type="text" placeholder="Zero or positive, please">
         </div>
-
+          <button type="submit" class="btn">Change to Beep-Boop!</button>
+      </form>
+      <div class="results">
+        <br>
+        <h3>Here's the "Beep! Boop!" list, starting with zero (0, "Beep!").</h3>
+        <br>
+        <div id="results1">
+        </div>
+      </div>
     </div>
-
-
   </body>
 </html>
