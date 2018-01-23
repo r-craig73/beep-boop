@@ -29,6 +29,14 @@
 #### Input: 0
 #### Output: [Beep!]
 
+### Program replaces 1 with values from 0 and ends at 1. Exceptions are included for values less than 1. (Done)
+#### Input: 1
+#### Output: [Beep!] [Boop!]
+
+### Program replaces 2 with values from 0 and ends at 2. Exceptions are included for values less than 2. (Done)
+#### Input: 2
+#### Output: [Beep!] [Boop!] [2]
+
 ### Program replaces 3 with numbers (start:0, end:3) and exceptions. (Done)
 #### Input: 3
 #### Output: [Beep!] [Boop!] [2] [I'm sorry Dave. I'm afraid I can't do that.]
@@ -52,14 +60,6 @@
 ### Program replaces numbers containing 1 with "Boop!" and exceptions. (NA)
 #### Input: 10, 100
 #### Output: [Beep!] [Boop!] [2].....[Boop!]
-
-### Program replaces 1 with values from 0 and ends at 1. Exceptions are included for values less than 1. (NA)
-#### Input: 1
-#### Output: [Beep!] [Boop!]
-
-### Program replaces 2 with values from 0 and ends at 2. Exceptions are included for values less than 2. (NA)
-#### Input: 2
-#### Output: [Beep!] [Boop!] [2]
 
 ## Known Bugs
 ### None known issues at the moment.
